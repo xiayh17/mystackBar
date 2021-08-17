@@ -46,6 +46,11 @@ rect_data <- rectData(data_mini2)
 
 
 # plot --------------------------------------------------------------------
+
+stack_data <- sortStack(data_mini2, orig.ident, celltype)
+
+rect_data <- rectData(data_mini2)
+
 colors = cols[[1]]
 name = stack_data@sort.type
 colors <- colors[order(match(names(colors),name))]
